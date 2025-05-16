@@ -8,6 +8,8 @@ $$ G_{dBm} = 10 \cdot \log_{10}{\left(  G_{mW} \right)} $$
 
 $$ G_{dBm} = 10 \cdot \log_{10}{\left(  G_{W} \cdot 1000 \right)} $$ 
 
+$$ G_{dBm} = G_{dBW} + 30 $$
+
 ---
 ### Week 1
 
@@ -23,6 +25,8 @@ BPSK | 1 bits/symbol
 QPSK | 2 bits/symbol
 8-PSK | 3 bits/symbol
 64-QAM | 6 bits/symbol
+N-QAM | $\log_{2}{N}$ bits/symbol
+
 
 Shannon Rate
 
@@ -31,9 +35,9 @@ $$ R = B \cdot \log_{2}{(1 + \text{SNR}_{linear})} $$
 $$ R = B \cdot \log_{2}{(1 + \frac{P}{N_0 B})} $$
 
 where
-$$ N_0 = \text{Power spectral density} $$
+$$ N_0 = \text{Power spectral density (noise)} $$
+$$ B = \text{bandwidth} $$
 
-> Maybe add Shannon for FDMA and TDMA
 ---
 ### Week 2
 
